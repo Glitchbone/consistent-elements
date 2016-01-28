@@ -1,0 +1,84 @@
+.button,
+button,
+input[type="submit"],
+input[type="button"] {
+
+    background-color: $button-bg-color;
+    color: $button-text-color;
+
+    height: $button-height;
+    line-height: $button-height;
+
+    font-size: $button-font-size;
+
+    cursor: pointer;
+    padding: 0 16px;
+    text-align: center;
+    text-decoration: none;
+
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+
+    @include user-select(none);
+    @include transition-property(border-color, background-color, color);
+    @include transition-duration(.1s);
+
+    &:hover {
+        background-color: lighten($button-bg-color, 3%);
+    }
+
+    &.button--round {
+        border-radius: $round-border-radius;
+    }
+
+    &.button--border {
+
+        border-width: 2px;
+        border-style: solid;
+
+        line-height: $button-height - 4;
+
+        background-color: transparent;
+        color: $button-bg-color;
+        border-color: $button-bg-color;
+
+        &:hover {
+            background-color: $button-bg-color;
+            color: $button-text-color;
+            border-color: $button-bg-color;
+        }
+
+    }
+
+}
+
+// Generate color variants
+
+@each $button-color in $button-colors {
+
+    $color-name: nth($button-color, 1);
+    $color-bg: nth($button-color, 2);
+    $color-text: nth($button-color, 3);
+
+    .button--#{$color-name} {
+        background-color: $color-bg;
+        color: $color-text;
+
+        &:hover {
+            background-color: lighten($color-bg, 30%);
+        }
+
+        &.button--border {
+            background-color: transparent;
+            color: $color-bg;
+            border-color: $color-bg;
+
+            &:hover {
+                background-color: $color-bg;
+                color: $color-text;
+                border-color: $color-bg;
+            }
+        }
+
+    }
+}

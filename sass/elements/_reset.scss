@@ -1,0 +1,38 @@
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+
+.button,
+button,
+input[type="submit"],
+input[type="button"],
+
+select,
+input[type="select"] {
+
+    @include box-sizing(border-box);
+    border-radius: 0;
+    display: inline-block;
+    background-image: none;
+    vertical-align: middle;
+    border: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    overflow: visible;
+    white-space: nowrap;
+    -webkit-appearance: none;
+
+}

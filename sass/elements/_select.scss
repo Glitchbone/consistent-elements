@@ -1,0 +1,17 @@
+select,
+input[type="select"] {
+
+    cursor: pointer;
+    padding-right: 28px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iY2hldnJvbkRvd24iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDMyIDMyIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIGZpbGw9ImN1cnJlbnRjb2xvciI+DQogIDxwYXRoIGQ9Ik0xIDEyIEwxNiAyNiBMMzEgMTIgTDI3IDggTDE2IDE4IEw1IDggeiI+PC9wYXRoPg0KPC9zdmc+);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 8px) center;
+    background-size: 12px auto;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    background-color: transparent;
+    color: $input-text-color;
+
+}

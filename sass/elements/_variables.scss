@@ -1,0 +1,34 @@
+$slate: #667d89;
+$black: #000;
+$red: red;
+
+// Common
+
+$round-border-radius: 4px;
+
+// Buttons
+
+$button-height: 32px;
+$button-font-size: 16px;
+$button-bg-color: #000;
+$button-text-color: #fff;
+
+$button-colors:
+    ('primary' #1B9AF7  #FFF)
+    ('plain' #FFF #1B9AF7)
+    ('inverse' #222 #EEE)
+    ('action' #A5DE37  #FFF)
+    ('highlight' #FEAE1B #FFF)
+    ('caution' #FF4351 #FFF)
+    ('royal' #7B72E9 #FFF) !default;
+
+// Inputs
+
+$input-height: $button-height;
+$input-font-size: 16px;
+$input-bg-color: transparent;
+$input-text-color: #000;
+$input-border-color: $input-text-color;
+
+$input-plain-bg-color: #ccc;
+$input-plain-text-color: #000;
